@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subhan Ali | Python Desktop App Developer</title>
+  <meta name="description" content="Python Desktop App Developer specializing in Automation, CustomTkinter, and AI-powered tools." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+    body {
+      background: radial-gradient(circle at top, #020617, #000);
+      color: #e5e7eb;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-60px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #020617, #020617);
+      position: relative;
+    }
+
+    .hero {
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-text {
+      animation: fadeUp 1.2s ease forwards;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      background: linear-gradient(90deg, #60a5fa, #22d3ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text p {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #cbd5f5;
+    }
+
+    .hero-text .stats {
+      margin-top: 30px;
+      display: flex;
+      gap: 30px;
+    }
+
+    .stat {
+      background: #020617;
+      padding: 15px 25px;
+      border-radius: 14px;
+      box-shadow: 0 0 40px rgba(56,189,248,0.15);
+    }
+
+    .stat h3 {
+      color: #38bdf8;
+      font-size: 1.8rem;
+    }
+
+    .hero-image {
+      animation: slideIn 1.2s ease forwards;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 360px;
+      border-radius: 30px;
+      box-shadow: 0 0 80px rgba(56,189,248,0.35);
+      transition: transform 0.6s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.05) rotate(1deg);
+    }
+
+    section {
+      padding: 90px 20px;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 25px;
+      color: #38bdf8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 50px rgba(56,189,248,0.12);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 80px rgba(56,189,248,0.35);
+    }
+
+    .card h3 {
+      color: #93c5fd;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #020617);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 16px 40px;
+      background: linear-gradient(90deg, #2563eb, #22d3ee);
+      color: white;
+      text-decoration: none;
+      border-radius: 40px;
+      font-weight: 600;
+      box-shadow: 0 0 40px rgba(56,189,248,0.4);
+      transition: transform 0.4s ease;
+    }
+
+    .cta a:hover {
+      transform: scale(1.08);
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      .hero-text .stats { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Subhan Ali</h1>
+      <p>
+        Python Desktop App Developer focused on automation, modern CustomTkinter GUIs,
+        and intelligent tools that solve real-world problems.
+      </p>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>500+</h3>
+          <span>Python Problems Solved</span>
+        </div>
+        <div class="stat">
+          <h3>10+</h3>
+          <span>Real Projects</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="subhan.jpg" alt="Subhan Ali" />
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>What I Do</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Python Desktop Applications</h3>
+      <p>Modern, fast, and offline desktop applications using Tkinter and CustomTkinter.</p>
+    </div>
+    <div class="card">
+      <h3>Automation Tools</h3>
+      <p>Smart Python tools that automate repetitive tasks and save hours of manual work.</p>
+    </div>
+    <div class="card">
+      <h3>AI & PyAutoGUI Bots</h3>
+      <p>Bots that analyze images and extract information automatically within seconds.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Calculator App</h3>
+      <p>Clean and responsive calculator built with CustomTkinter.</p>
+    </div>
+    <div class="card">
+      <h3>Student Management System</h3>
+      <p>Complete offline system to manage student records efficiently.</p>
+    </div>
+    <div class="card">
+      <h3>Library Management System</h3>
+      <p>Python-based system to manage books, users, and records.</p>
+    </div>
+    <div class="card">
+      <h3>Digital Clock</h3>
+      <p>Real-time digital clock with smooth UI.</p>
+    </div>
+    <div class="card">
+      <h3>Image Info Bot</h3>
+      <p>PyAutoGUI-powered bot that extracts structured information from images in ~20 seconds.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Let’s Build Something Powerful</h2>
+  <p>If you need a reliable Python desktop app or automation solution, I’m ready.</p>
+  <a href="https://www.fiverr.com/">Hire Me on Fiverr</a>
+</section>
+
+<footer>
+  © 2026 Subhan Ali — Python Desktop App Developer
+</footer>
+
+</body>
+</html>
